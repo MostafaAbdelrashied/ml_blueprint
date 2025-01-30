@@ -1,0 +1,55 @@
+[project]
+name = "ml-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Mostafa Abdelrashied", email = "mostafa.abdelrashied@outlook.de" }
+]
+license = "MIT"
+requires-python = ">=3.12"
+dependencies = [
+    "loguru>=0.7.3",
+    "matplotlib>=3.10.0",
+    "mlflow>=2.20.1",
+    "numpy>=2.2.2",
+    "polars>=1.21.0",
+    "pyarrow>=18.1.0",
+    "scikit-learn>=1.6.1",
+    "scipy>=1.15.1",
+]
+
+[project.scripts]
+pipeline = "ml_project.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+    "mypy>=1.14.1",
+    "pre-commit>=4.1.0",
+    "pytest-cov>=6.0.0",
+    "pytest>=8.3.4",
+    "ruff>=0.9.4",
+    "dvc>=3.59.0",
+]
+
+
+[tool.hatch.version]
+path = "VERSION"
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = "--cov=src --cov-report=term --cov-report=html"
+pythonpath = [
+  "src"
+]
+testpaths = ["tests"]
+
+[tool.mypy]
+files = "src"
+strict = true
+

@@ -1,0 +1,103 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+*.whl
+.eggs/
+.installed.cfg
+
+# Virtual environment directories
+.venv/
+venv/
+env/
+.venv.bak/
+
+# Poetry virtual environments
+.poetry/
+
+# VSCode and other IDE settings
+.vscode/
+.idea/
+*.swp
+
+# C extensions
+*.so
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Notebooks
+notebooks/
+
+# Data files
+*.csv
+*.tsv
+*.json
+*.xml
+*.xlsx
+*.parquet
+*.db
+*.log
+*.dat
+*.h5
+*.sqlite3
+
+# Temporary and backup files
+*.tmp
+*.bak
+*.orig
+*.rej
+*.sublime-project
+*.sublime-workspace
+*.DS_Store
+
+# macOS generated files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Logs and debug files
+logs/
+*.log
+debug.log
+
+# Cache directories
+.cache/
+.mypy_cache/
+.pytype/
+pylint.d/
+
+# Secrets and environment configuration
+.env
+.env.*
+secrets.yml
+
+# Docker
+docker-compose.override.yml
+.docker/
+
+# Generated documentation
+docs/_build/
+
+# Profiling data
+*.prof
+
+
+# mlruns
+mlruns/

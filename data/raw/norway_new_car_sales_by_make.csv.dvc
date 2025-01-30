@@ -1,0 +1,5 @@
+outs:
+- md5: 13c70f234f9d445fa8658c6bf73ae254
+  size: 107301
+  hash: md5
+  path: norway_new_car_sales_by_make.csv
