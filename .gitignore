@@ -46,6 +46,7 @@ coverage.xml
 notebooks/
 
 # Data files
+.dvc/
 *.csv
 *.tsv
 *.json
