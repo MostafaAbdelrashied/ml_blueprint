@@ -1,0 +1,9 @@
+stages:
+  load_data:
+    cmd: python -m ml_project.data.data_loader
+    deps:
+      - data/raw/norway_new_car_sales_by_make.csv
+    outs:
+      - data/processed/cleaned.parquet
+    metrics:
+      - reports/data/data_stats.json

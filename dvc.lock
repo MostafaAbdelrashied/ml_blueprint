@@ -1,0 +1,18 @@
+schema: '2.0'
+stages:
+  load_data:
+    cmd: python -m ml_project.data.data_loader
+    deps:
+    - path: data/raw/norway_new_car_sales_by_make.csv
+      hash: md5
+      md5: f16d59741e1fdd4810f85b54743435ac
+      size: 107301
+    outs:
+    - path: data/processed/cleaned.parquet
+      hash: md5
+      md5: 5c2f168155aa4ac59321cde6c9d7b638
+      size: 18790
+    - path: reports/data/data_stats.json
+      hash: md5
+      md5: df3e0f3498e0eb3d999f5dd0abf30202
+      size: 1139
